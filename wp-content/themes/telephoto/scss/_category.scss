@@ -1,0 +1,51 @@
+.content{
+	top: 120px;
+	h1{
+		text-align: center;
+		padding-bottom: 50px;
+		font-size: 2em;
+		font-family: 'Space Mono', monospace;
+	}
+	a{
+		margin-top: 50px;
+		text-decoration: none;
+		article{
+			height: 400px;
+			width: 100%;
+			overflow: hidden;
+			background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)),rgba(0,0,0,-0.55);
+			h2, .preview{
+				color: white;
+				font-family: 'Space Mono', monospace;
+				padding-left: 12.5%;
+				width: 40%;
+				top: 30%;
+			}
+			h2{
+				font-size: 1.5em;
+				padding-bottom: 0px;
+				text-align: left;
+			}
+			.preview{
+				font-size: 1em;
+				padding-top: 40px;
+				padding-right: 0px;
+			}
+			img{
+				z-index: -1;
+			    width: 100%;
+			    height: auto;
+			    position: absolute;
+			}
+			@media (max-width: 600px){
+				img{
+					height: 100%;
+					width: auto;
+				}
+				.preview{
+					padding-top: 20px;
+				}
+			}
+		}
+	}
+}

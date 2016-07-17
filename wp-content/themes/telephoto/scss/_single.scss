@@ -1,0 +1,21 @@
+.single{	
+	text-align: center;
+	top: 50px;
+	padding-bottom: 50px;
+	.info{
+		font-family: 'Space Mono', monospace;
+		margin: 0 20% ;
+		font-size: 1.1em;
+		line-height: 1.1em;
+		padding-bottom: 50px;
+	}
+}
+.carousel{
+	position: relative;
+	text-align: center;
+	img{
+		padding-top: 50px;
+		width: 70%;
+		height: auto;
+	}
+}
