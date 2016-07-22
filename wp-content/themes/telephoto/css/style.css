@@ -178,10 +178,12 @@ header {
     font-family: 'Space Mono', monospace; }
   .content a {
     margin-top: 50px;
-    text-decoration: none; }
+    text-decoration: none;
+    padding-bottom: 100px; }
     .content a article {
       height: 400px;
       width: 100%;
+      margin-bottom: 200px;
       overflow: hidden;
       background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), transparent; }
       .content a article h2, .content a article .preview {
@@ -228,5 +230,21 @@ header {
     padding-top: 50px;
     width: 70%;
     height: auto; }
+
+#site-footer {
+  text-align: center;
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-top: 50px; }
+  #site-footer a {
+    text-decoration: none;
+    padding: 4.5px;
+    font-size: 14px;
+    color: #aaa;
+    text-transform: uppercase; }
+
+body {
+  padding-bottom: 0px !important; }
 
 /*# sourceMappingURL=style.css.map */

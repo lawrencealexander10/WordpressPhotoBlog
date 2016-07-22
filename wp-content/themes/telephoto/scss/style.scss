@@ -121,3 +121,22 @@ header{
 
 @import "category";
 @import "single";
+
+#site-footer{
+  text-align: center;
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-top: 50px;
+  a{
+    text-decoration: none;
+    padding: 4.5px;
+    font-size: 14px;
+    color: #aaa;
+    text-transform: uppercase;
+  }
+}
+
+body{
+  padding-bottom: 0px !important;
+}

@@ -72,4 +72,4 @@ foreach ( $query_images->posts as $image ) {
   });
 }); 
 </script>
-<?php // Starkers_Utilities::get_template_parts( array( 'parts/shared/footer','parts/shared/html-footer') ); ?>
+<?php Starkers_Utilities::get_template_parts( array( 'parts/shared/footer','parts/shared/html-footer') ); ?>
