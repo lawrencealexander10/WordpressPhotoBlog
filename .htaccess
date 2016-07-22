@@ -1,5 +1,6 @@
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
+Options +FollowSymLinks
 RewriteEngine On
 RewriteBase /wordpress-heroku/
 RewriteRule ^index\.php$ - [L]
@@ -9,3 +10,4 @@ RewriteRule . /wordpress-heroku/index.php [L]
 </IfModule>
 
 # END WordPress
+
