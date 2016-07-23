@@ -18,13 +18,14 @@
 			background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)),rgba(0,0,0,-0.55);
 			h2, .preview{
 				color: white;
-				font-family: 'Space Mono', monospace;
+				font-family: 'Source Sans Pro', sans-serif;
+				font-size: 1.1em !important;
 				padding-left: 12.5%;
 				width: 40%;
 				top: 30%;
 			}
 			h2{
-				font-size: 1.5em;
+				font-size: 1.5em !important;
 				padding-bottom: 0px;
 				text-align: left;
 			}

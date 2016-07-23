@@ -64,17 +64,19 @@ body { font-family: sans-serif; }
 }
 
 header{
+  font-family: 'Source Sans Pro', sans-serif;
   background: white;
   opacity:.5;
   width: 100%;
   position: fixed;
   top: 0; 
   z-index: 2;
-  // margin-right: 10px; 
   padding: 15px 0;
   a{
+  font-size: 1.22em;
+  font-weight: 500;
   font-family: 'Space Mono', monospace;
-  //font-family: 'Montserrat', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   text-align: right;
   float: right;
   margin-right: 30px;
@@ -128,12 +130,15 @@ header{
   text-transform: uppercase;
   font-size: 14px;
   margin-top: 50px;
+  font-family: 'Source Sans Pro', sans-serif;
   a{
     text-decoration: none;
     padding: 4.5px;
     font-size: 14px;
     color: #aaa;
+    font-family: 'Source Sans Pro', sans-serif;
     text-transform: uppercase;
+    cursor: pointer;
   }
 }
 
