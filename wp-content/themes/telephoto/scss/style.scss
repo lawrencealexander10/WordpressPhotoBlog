@@ -74,9 +74,11 @@ header{
   padding: 15px 0;
   a{
   font-size: 1.22em;
-  font-weight: 500;
-  font-family: 'Space Mono', monospace;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  // font-family: 'Space Mono', monospace;
+  // font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Avenir", "Open Sans", "Helvetica-Neue", "Arial", "Helvetica", sans-serif;
+  color: black;
   text-align: right;
   float: right;
   margin-right: 30px;

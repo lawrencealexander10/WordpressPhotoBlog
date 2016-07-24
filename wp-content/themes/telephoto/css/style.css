@@ -131,9 +131,9 @@ header {
   padding: 15px 0; }
   header a {
     font-size: 1.22em;
-    font-weight: 500;
-    font-family: 'Space Mono', monospace;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-family: "Avenir", "Open Sans", "Helvetica-Neue", "Arial", "Helvetica", sans-serif;
+    color: black;
     text-align: right;
     float: right;
     margin-right: 30px;
@@ -179,7 +179,7 @@ header {
     text-align: center;
     padding-bottom: 50px;
     font-size: 2em;
-    font-family: 'Space Mono', monospace; }
+    font-family: 'Source Sans Pro', sans-serif; }
   .content a {
     margin-top: 50px;
     text-decoration: none;
@@ -226,7 +226,6 @@ header {
     margin: 0 20%;
     font-size: 1.2em;
     line-height: 1.1em;
-    padding-bottom: 50px;
     color: #696565; }
 
 .carousel {
