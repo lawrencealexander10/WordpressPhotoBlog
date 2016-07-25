@@ -32,9 +32,14 @@ foreach ( $query_images->posts as $image ) {
 } ?>
 
 <!-- HTML -->
-<section class="top-pane">
-  <div class="headline" style="text-align:center">
-    <div class="element"></div>
+<section style="overflow: hidden;" class="top-pane">
+    <div style="position:absolute; top:0; left:0;overflow: hidden;">
+      <img class="ena-image" style="width: 120%; top: -320px; left: -10%" src="<?php echo get_template_directory_uri();?>/images/ena.gif" alt="">
+    </div>
+    <div style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), transparent; height: 100%">
+  <div class="headline" style="text-align:center;">
+    <div style="z-index: 100; color: white" class="element"></div>
+  </div>
   </div>
   <div class="icons">
     <a href="<?php echo the_author_meta( 'insta', 1); ?>" class="fa fa-instagram "></a> 
@@ -55,8 +60,8 @@ foreach ( $query_images->posts as $image ) {
 <script>
   $(function(){
       $(".element").typed({
-        strings: ["Photographer.", "Filmmaker.", "Storyteller.", "New Yorker.", "Everlena."],
-        typeSpeed: 30
+        strings: ["Photographer.", "Filmmaker.", "Everlena."],
+        typeSpeed: 60
       });
   });
 </script>

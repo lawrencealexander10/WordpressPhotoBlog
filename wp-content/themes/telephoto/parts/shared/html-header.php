@@ -21,7 +21,7 @@
 		<script src="http://cdn.rawgit.com/noelboss/featherlight/1.5.0/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
 		<link href="http://cdn.rawgit.com/noelboss/featherlight/1.5.0/release/featherlight.gallery.min.css" type="text/css" rel="stylesheet" />
 		<script src="//cdn.rawgit.com/noelboss/featherlight/1.5.0/release/featherlight.gallery.min.js" type="text/javascript" charset="utf-8"></script>
-		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Space+Mono" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Space+Mono|Raleway" rel="stylesheet">
 
 		<?php wp_head(); ?>
 	</head>

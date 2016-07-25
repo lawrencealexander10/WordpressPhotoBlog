@@ -61,23 +61,24 @@ body { font-family: sans-serif; }
 
 .fa{
   font-size: 1.5em !important;
+  color: white !important;
 }
 
 header{
   font-family: 'Source Sans Pro', sans-serif;
   background: white;
-  opacity:.5;
+  // opacity:.5;
   width: 100%;
   position: fixed;
   top: 0; 
   z-index: 2;
   padding: 15px 0;
   a{
-  font-size: 1.22em;
-  font-weight: 600;
+  font-size: 15px;
+  // font-weight: 600;
   // font-family: 'Space Mono', monospace;
   // font-family: 'Source Sans Pro', sans-serif;
-  font-family: "Avenir", "Open Sans", "Helvetica-Neue", "Arial", "Helvetica", sans-serif;
+  font-family: "Raleway", "Open Sans", "Helvetica-Neue", "Arial", "Helvetica", sans-serif;
   color: black;
   text-align: right;
   float: right;
@@ -90,25 +91,26 @@ header{
 
 //typed.js
 .typed-cursor{
+    color: white;
     opacity: 1;
     -webkit-animation: blink 0.7s infinite;
     -moz-animation: blink 0.7s infinite;
     animation: blink 0.7s infinite;
 }
 @keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+    0% { opacity:1; color: white;}
+    50% { opacity:0; color: white;}
+    100% { opacity:1; color: white;}
 }
 @-webkit-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+    0% { opacity:1; color: white;}
+    50% { opacity:0; color: white;}
+    100% { opacity:1; color: white;}
 }
 @-moz-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+    0% { opacity:1; color: white;}
+    50% { opacity:0; color: white;}
+    100% { opacity:1; color: white;}
 }
 
 //featherlight
@@ -146,4 +148,14 @@ header{
 
 body{
   padding-bottom: 0px !important;
+}
+
+@media (max-width: 1300px){
+  .ena-image{
+
+    height: 200%;
+    width: auto !important;
+    top: 0px; 
+    left: -10%;
+  }
 }
