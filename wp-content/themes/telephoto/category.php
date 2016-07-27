@@ -9,8 +9,7 @@
  * @since 		Starkers 4.0
  */
 ?>
-<?php Starkers_Utilities::get_template_parts( array( 'parts/shared/header', 'parts/shared/html-header') ); ?>
-
+<?php Starkers_Utilities::get_template_parts( array( 'parts/shared/html-header', 'parts/shared/header') ); ?>
 <?php if ( have_posts() ): ?>
   <section class="content">
     <h1>Work</h1>

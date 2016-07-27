@@ -23,11 +23,11 @@ body { font-family: sans-serif; }
 /* ---- .grid-item ---- */
 
 .grid-item {
-  width: 33%;
+  width: 32%;
 }
 
 .grid-item {
-  float: left;
+  // float: left;
 }
 
 .grid-item img {
@@ -37,6 +37,7 @@ body { font-family: sans-serif; }
 
 //
 .top-pane{
+  overflow: hidden;
   .headline{
     top: 65%;
     text-align: center;
@@ -44,6 +45,9 @@ body { font-family: sans-serif; }
   .element{
     display: inline !important;
     font-family: 'Space Mono', monospace;
+    font-size: 1.5em;
+    color: white;
+    z-index: 10;
   }
   height: 70%;
   .icons{  
@@ -58,6 +62,16 @@ body { font-family: sans-serif; }
     }
   }
 }
+.image-wrap{
+  position:absolute; 
+  top:0; 
+  left:0;
+  overflow: hidden;
+}
+.gradient{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), transparent; 
+  height: 100%;
+}
 
 .fa{
   font-size: 1.5em !important;
@@ -65,28 +79,25 @@ body { font-family: sans-serif; }
 }
 
 header{
-  // font-family: 'Source Sans Pro', sans-serif;
   background: white;
-  // opacity:.5;
   width: 100%;
   position: fixed;
   top: 0; 
   z-index: 2;
   padding: 15px 0;
   a{
-  font-size: 15px;
-  // font-weight: 600;
-  // font-family: 'Space Mono', monospace;
-  // font-family: 'Source Sans Pro', sans-serif;
+  font-size: 17px;
   font-family: "Raleway", "Open Sans", "Helvetica-Neue", "Arial", "Helvetica", sans-serif;
   color: black;
-  text-align: right;
-  float: right;
-  margin-right: 30px;
-  //text-transform: uppercase;
   text-decoration: none;
   }
-
+  .right{
+    float: right;
+    margin-right: 60px;
+  }
+  .left{
+    margin-left: 45px;
+  }
 }
 
 //typed.js
@@ -133,7 +144,7 @@ header{
   padding: 10px;
   text-transform: uppercase;
   font-size: 14px;
-  margin-top: 50px;
+  padding-top: 50px;
   font-family: 'Source Sans Pro', sans-serif;
   a{
     text-decoration: none;
@@ -144,18 +155,43 @@ header{
     text-transform: uppercase;
     cursor: pointer;
   }
+  a:last-child{
+    padding: 0px;
+    color: #696565
+  }
+  @media (max-width: 500px){
+    a:last-child{
+      padding-top: 10px !important;
+      display: block;
+    }
+  }
 }
 
 body{
   padding-bottom: 0px !important;
 }
 
+.ena-image{
+  width: 110%; 
+  top: -270px; 
+  left: -10%; 
+  position:fixed
+}
 @media (max-width: 1300px){
   .ena-image{
-
     height: 200%;
     width: auto !important;
     top: 0px; 
-    left: -10%;
+    // left: -900px;
   }
+}
+.bottom-pane{
+  padding: 20px;
+  background: white
+}
+.grid-sizer{
+  width: 1%;
+}
+.grid-sizer{
+  width: 1.4%;
 }

@@ -32,13 +32,13 @@ foreach ( $query_images->posts as $image ) {
 } ?>
 
 <!-- HTML -->
-<section style="overflow: hidden;" class="top-pane">
-    <div style="position:absolute; top:0; left:0;overflow: hidden;">
-      <img class="ena-image" style="width: 120%; top: -320px; left: -10%" src="<?php echo get_template_directory_uri();?>/images/ena.gif" alt="">
+<section class="top-pane">
+    <div class="image-wrap">
+      <img class="ena-image" src="<?php echo get_template_directory_uri();?>/images/ena.gif" alt="">
     </div>
-    <div style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), transparent; height: 100%">
-  <div class="headline" style="text-align:center;">
-    <div style="z-index: 100; color: white" class="element"></div>
+    <div class="gradient">
+  <div class="headline">
+    <div class="element"></div>
   </div>
   </div>
   <div class="icons">
@@ -49,8 +49,10 @@ foreach ( $query_images->posts as $image ) {
 </section>
 
 
- <section style="padding: 20px">
+ <section class="bottom-pane">
     <div data-featherlight-gallery data-featherlight-filter="a" class="grid">
+    <div class="gutter-sizer"></div>
+    <div class="grid-sizer"></div>
       <?php foreach ($images as $image):?>
         <a class="grid-item" href="<?php echo $image ?>"><img src="<?php echo $image ?>"> </a>
       <?php endforeach; ?>
@@ -61,7 +63,7 @@ foreach ( $query_images->posts as $image ) {
   $(function(){
       $(".element").typed({
         strings: ["Photographer.", "Filmmaker.", "Everlena."],
-        typeSpeed: 60
+        typeSpeed: 100
       });
   });
 </script>
@@ -71,9 +73,10 @@ foreach ( $query_images->posts as $image ) {
   // init Packery after all images have loaded
   $grid.packery({
     itemSelector: '.grid-item',
-    gutter: 6.5 ,
+    gutter: ".grid-sizer" ,
     containerStyle: null,
-    percentPosition: true
+    percentPosition: true,
+    columnWidth: ".grid-sizer"
   });
 }); 
 </script>

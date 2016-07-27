@@ -90,23 +90,24 @@ body {
 
 /* ---- .grid-item ---- */
 .grid-item {
-  width: 33%; }
-
-.grid-item {
-  float: left; }
+  width: 32%; }
 
 .grid-item img {
   display: block;
   max-width: 100%; }
 
 .top-pane {
+  overflow: hidden;
   height: 70%; }
   .top-pane .headline {
     top: 65%;
     text-align: center; }
   .top-pane .element {
     display: inline !important;
-    font-family: 'Space Mono', monospace; }
+    font-family: 'Space Mono', monospace;
+    font-size: 1.5em;
+    color: white;
+    z-index: 10; }
   .top-pane .icons {
     bottom: 10px;
     right: 20px;
@@ -116,6 +117,16 @@ body {
       color: black;
       padding: 10px;
       font-size: 50em; }
+
+.image-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden; }
+
+.gradient {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), transparent;
+  height: 100%; }
 
 .fa {
   font-size: 1.5em !important;
@@ -129,13 +140,15 @@ header {
   z-index: 2;
   padding: 15px 0; }
   header a {
-    font-size: 15px;
+    font-size: 17px;
     font-family: "Raleway", "Open Sans", "Helvetica-Neue", "Arial", "Helvetica", sans-serif;
     color: black;
-    text-align: right;
-    float: right;
-    margin-right: 30px;
     text-decoration: none; }
+  header .right {
+    float: right;
+    margin-right: 60px; }
+  header .left {
+    margin-left: 45px; }
 
 .typed-cursor {
   color: white;
@@ -249,7 +262,7 @@ header {
   padding: 10px;
   text-transform: uppercase;
   font-size: 14px;
-  margin-top: 50px;
+  padding-top: 50px;
   font-family: 'Source Sans Pro', sans-serif; }
   #site-footer a {
     text-decoration: none;
@@ -259,15 +272,36 @@ header {
     font-family: 'Source Sans Pro', sans-serif;
     text-transform: uppercase;
     cursor: pointer; }
+  #site-footer a:last-child {
+    padding: 0px;
+    color: #696565; }
+  @media (max-width: 500px) {
+    #site-footer a:last-child {
+      padding-top: 10px !important;
+      display: block; } }
 
 body {
   padding-bottom: 0px !important; }
+
+.ena-image {
+  width: 110%;
+  top: -270px;
+  left: -10%;
+  position: fixed; }
 
 @media (max-width: 1300px) {
   .ena-image {
     height: 200%;
     width: auto !important;
-    top: 0px;
-    left: -10%; } }
+    top: 0px; } }
+.bottom-pane {
+  padding: 20px;
+  background: white; }
+
+.grid-sizer {
+  width: 1%; }
+
+.grid-sizer {
+  width: 1.4%; }
 
 /*# sourceMappingURL=style.css.map */
