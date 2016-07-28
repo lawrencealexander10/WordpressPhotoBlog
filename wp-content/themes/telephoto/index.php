@@ -34,7 +34,7 @@ foreach ( $query_images->posts as $image ) {
 <!-- HTML -->
 <section class="top-pane">
     <div class="image-wrap">
-      <img class="ena-image" src="<?php echo get_template_directory_uri();?>/images/ena.gif" alt="">
+      <img class="ena-image" src="https://s3.amazonaws.com/telephoto/wp-content/uploads/2016/07/Ena.gif" alt="">
     </div>
     <div class="gradient">
   <div class="headline">
