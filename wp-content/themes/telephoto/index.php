@@ -33,8 +33,8 @@ foreach ( $query_images->posts as $image ) {
 
 <!-- HTML -->
 <section class="top-pane">
-    <div class="image-wrap">
-      <img class="ena-image" src="https://s3.amazonaws.com/telephoto/wp-content/uploads/2016/07/Ena.gif" alt="">
+<!--     <div class="image-wrap">
+      <img class="ena-image" src="" alt="">
     </div>
     <div class="gradient">
   <div class="headline">
@@ -42,42 +42,102 @@ foreach ( $query_images->posts as $image ) {
   </div>
   </div>
   <div class="icons">
-    <a href="<?php echo the_author_meta( 'insta', 1); ?>" class="fa fa-instagram "></a> 
-    <a href="<?php echo the_author_meta( 'linkedin', 1); ?>" class="fa fa-linkedin "></a> 
-    <a href="mailto:<?php echo the_author_meta( 'user_email', 1); ?>" class="fa fa-envelope-square "></a>
-  </div>
+    <a href="<?php //echo the_author_meta( 'insta', 1); ?>" class="fa fa-instagram "></a> 
+    <a href="<?php //echo the_author_meta( 'linkedin', 1); ?>" class="fa fa-linkedin "></a> 
+    <a href="mailto:<?php //echo the_author_meta( 'user_email', 1); ?>" class="fa fa-envelope-square "></a>
+  </div> -->
 </section>
 
-
+hello<br> 
+hello
+hello<br> 
+hello
+hello<br> 
+hello
+hello<br> 
+hello
+hello<br> 
+hello
  <section class="bottom-pane">
     <div data-featherlight-gallery data-featherlight-filter="a" class="grid">
     <div class="gutter-sizer"></div>
     <div class="grid-sizer"></div>
       <?php foreach ($images as $image):?>
-        <a class="grid-item" href="<?php echo $image ?>"><img src="<?php echo $image ?>"> </a>
-      <?php endforeach; ?>
+        <a class="grid-item" href="<?php echo $image ?>"><img class="lazy" data-src="<?php echo $image ?>"> </a>
+      <?php endforeach; ?>  
+            <?php foreach ($images as $image):?>
+        <a class="grid-item" href="<?php echo $image ?>"><img class="lazy" data-src="<?php echo $image ?>"> </a>
+      <?php endforeach; ?>  
+            <?php foreach ($images as $image):?>
+        <a class="grid-item" href="<?php echo $image ?>"><img class="lazy" data-src="<?php echo $image ?>"> </a>
+      <?php endforeach; ?>  
+            <?php foreach ($images as $image):?>
+        <a class="grid-item" href="<?php echo $image ?>"><img class="lazy" data-src="<?php echo $image ?>"> </a>
+      <?php endforeach; ?>  
+            <?php foreach ($images as $image):?>
+        <a class="grid-item" href="<?php echo $image ?>"><img class="lazy" data-src="<?php echo $image ?>"> </a>
+      <?php endforeach; ?>  
+            <?php foreach ($images as $image):?>
+        <a class="grid-item" href="<?php echo $image ?>"><img class="lazy" data-src="<?php echo $image ?>"> </a>
+      <?php endforeach; ?>  
+            <?php foreach ($images as $image):?>
+        <a class="grid-item" href="<?php echo $image ?>"><img class="lazy" data-src="<?php echo $image ?>"> </a>
+      <?php endforeach; ?>  
+            <?php foreach ($images as $image):?>
+        <a class="grid-item" href="<?php echo $image ?>"><img class="lazy" data-src="<?php echo $image ?>"> </a>
+      <?php endforeach; ?>  
+            <?php foreach ($images as $image):?>
+        <a class="grid-item" href="<?php echo $image ?>"><img class="lazy" data-src="<?php echo $image ?>"> </a>
+      <?php endforeach; ?>  
+            <?php foreach ($images as $image):?>
+        <a class="grid-item" href="<?php echo $image ?>"><img class="lazy" data-src="<?php echo $image ?>"> </a>
+      <?php endforeach; ?>  
+            <?php foreach ($images as $image):?>
+        <a class="grid-item" href="<?php echo $image ?>"><img class="lazy" data-src="<?php echo $image ?>"> </a>
+      <?php endforeach; ?>  
     </div>
 </section>
 
-<script>
-  $(function(){
-      $(".element").typed({
-        strings: ["Photographer.", "Filmmaker.", "Everlena."],
-        typeSpeed: 100
-      });
-  });
+<script type="text/javascript">
+  $(function() {
+      var $grid = $('.grid').packery({
+          itemSelector: '.grid-item',
+          gutter: ".grid-sizer" ,
+          containerStyle: null,
+          percentPosition: true,
+          columnWidth: ".grid-sizer"
+        }); 
+    $('.lazy').Lazy({
+        afterLoad: function(element) {
+            console.log(element.attr("src"));
+            $('.grid').packery('layout');
+        },
+        beforeLoad: function(element){
+          element.css("margin-bottom", '0px');
+        }
+    });
+});
 </script>
 
+// <script>
+//   $(function(){
+//       $(".element").typed({
+//         strings: ["Photographer.", "Filmmaker.", "Everlena."],
+//         typeSpeed: 100
+//       });
+//   });
+// </script>
+
 <script type="text/javascript">
-  var $grid = $('.grid').imagesLoaded( function() {
-  // init Packery after all images have loaded
-  $grid.packery({
-    itemSelector: '.grid-item',
-    gutter: ".grid-sizer" ,
-    containerStyle: null,
-    percentPosition: true,
-    columnWidth: ".grid-sizer"
-  });
-}); 
+//   var $grid = $('.grid').imagesLoaded( function() {
+//   // init Packery after all images have loaded
+//   $grid.packery({
+//     itemSelector: '.grid-item',
+//     gutter: ".grid-sizer" ,
+//     containerStyle: null,
+//     percentPosition: true,
+//     columnWidth: ".grid-sizer"
+//   });
+// }); 
 </script>
 <?php Starkers_Utilities::get_template_parts( array( 'parts/shared/footer','parts/shared/html-footer') ); ?>

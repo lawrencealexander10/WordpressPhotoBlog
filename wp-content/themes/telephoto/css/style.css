@@ -93,8 +93,9 @@ body {
   width: 32%; }
 
 .grid-item img {
-  display: block;
-  max-width: 100%; }
+  max-width: 100%;
+  margin-bottom: 200px;
+  height: auto; }
 
 .top-pane {
   overflow: hidden;

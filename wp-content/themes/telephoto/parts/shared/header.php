@@ -1,3 +1,5 @@
+  <!DOCTYPE HTML>
+  <html>
   <head>
     <title>Everlena Tenn</title>
     <meta charset="<?php bloginfo( 'charset' ); ?>" />
@@ -5,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Remove if you're not building a responsive site. (But then why would you do such a thing?) -->
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
     <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon.ico"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
+    <script src="<?php echo get_site_url(); ?>/wp-content/themes/telephoto/js/jquery.min.js"></script>
+    <script type="text/javascript" src="<?php echo get_site_url(); ?>/wp-content/themes/telephoto/js/jquery.lazy.min.js"></script>
+    <script src="<?php echo get_site_url(); ?>/wp-content/themes/telephoto/js/imagesloaded.pkgd.min.js"></script>
     <script src="<?php echo get_site_url(); ?>/wp-content/themes/telephoto/js/typed.js"></script>
     <script src="<?php echo get_site_url(); ?>/wp-content/themes/telephoto/js/packery.pkgd.min.js"></script>
     <link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/telephoto/css/style.css"/>
@@ -19,7 +22,7 @@
 
     <?php wp_head(); ?>
   </head> 
-  
+<body <?php body_class(); ?>>
 <div style="" class = "sticky-footer-wrapper">
   <header id="site-header">
         <a class="left" href="<?php echo(site_url()); ?>">Everlena Tenn </a>
