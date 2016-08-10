@@ -9,7 +9,6 @@
     <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon.ico"/>
     <script src="<?php echo get_site_url(); ?>/wp-content/themes/telephoto/js/jquery.min.js"></script>
     <script type="text/javascript" src="<?php echo get_site_url(); ?>/wp-content/themes/telephoto/js/jquery.lazy.min.js"></script>
-    <script src="<?php echo get_site_url(); ?>/wp-content/themes/telephoto/js/imagesloaded.pkgd.min.js"></script>
     <script src="<?php echo get_site_url(); ?>/wp-content/themes/telephoto/js/typed.js"></script>
     <script src="<?php echo get_site_url(); ?>/wp-content/themes/telephoto/js/packery.pkgd.min.js"></script>
     <link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/telephoto/css/style.css"/>

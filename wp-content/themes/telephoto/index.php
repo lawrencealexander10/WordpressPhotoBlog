@@ -33,14 +33,13 @@ foreach ( $query_images->posts as $image ) {
 
 <!-- HTML -->
 <section class="top-pane">
-<!--     <div class="image-wrap">
-      <img class="ena-image" src="" alt="">
-    </div>
-    <div class="gradient">
-  <div class="headline">
-    <div class="element"></div>
-  </div>
-  </div>
+hello<br> 
+hello<br>
+hello<br> 
+hello<br> 
+Filmmaker <br>
+
+<img class="ena-image" src="https://upload.wikimedia.org/wikipedia/commons/6/64/Foods_(cropped).jpg" alt="">
   <div class="icons">
     <a href="<?php //echo the_author_meta( 'insta', 1); ?>" class="fa fa-instagram "></a> 
     <a href="<?php //echo the_author_meta( 'linkedin', 1); ?>" class="fa fa-linkedin "></a> 
@@ -48,51 +47,12 @@ foreach ( $query_images->posts as $image ) {
   </div> -->
 </section>
 
-hello<br> 
-hello
-hello<br> 
-hello
-hello<br> 
-hello
-hello<br> 
-hello
-hello<br> 
-hello
+
  <section class="bottom-pane">
     <div data-featherlight-gallery data-featherlight-filter="a" class="grid">
     <div class="gutter-sizer"></div>
     <div class="grid-sizer"></div>
       <?php foreach ($images as $image):?>
-        <a class="grid-item" href="<?php echo $image ?>"><img class="lazy" data-src="<?php echo $image ?>"> </a>
-      <?php endforeach; ?>  
-            <?php foreach ($images as $image):?>
-        <a class="grid-item" href="<?php echo $image ?>"><img class="lazy" data-src="<?php echo $image ?>"> </a>
-      <?php endforeach; ?>  
-            <?php foreach ($images as $image):?>
-        <a class="grid-item" href="<?php echo $image ?>"><img class="lazy" data-src="<?php echo $image ?>"> </a>
-      <?php endforeach; ?>  
-            <?php foreach ($images as $image):?>
-        <a class="grid-item" href="<?php echo $image ?>"><img class="lazy" data-src="<?php echo $image ?>"> </a>
-      <?php endforeach; ?>  
-            <?php foreach ($images as $image):?>
-        <a class="grid-item" href="<?php echo $image ?>"><img class="lazy" data-src="<?php echo $image ?>"> </a>
-      <?php endforeach; ?>  
-            <?php foreach ($images as $image):?>
-        <a class="grid-item" href="<?php echo $image ?>"><img class="lazy" data-src="<?php echo $image ?>"> </a>
-      <?php endforeach; ?>  
-            <?php foreach ($images as $image):?>
-        <a class="grid-item" href="<?php echo $image ?>"><img class="lazy" data-src="<?php echo $image ?>"> </a>
-      <?php endforeach; ?>  
-            <?php foreach ($images as $image):?>
-        <a class="grid-item" href="<?php echo $image ?>"><img class="lazy" data-src="<?php echo $image ?>"> </a>
-      <?php endforeach; ?>  
-            <?php foreach ($images as $image):?>
-        <a class="grid-item" href="<?php echo $image ?>"><img class="lazy" data-src="<?php echo $image ?>"> </a>
-      <?php endforeach; ?>  
-            <?php foreach ($images as $image):?>
-        <a class="grid-item" href="<?php echo $image ?>"><img class="lazy" data-src="<?php echo $image ?>"> </a>
-      <?php endforeach; ?>  
-            <?php foreach ($images as $image):?>
         <a class="grid-item" href="<?php echo $image ?>"><img class="lazy" data-src="<?php echo $image ?>"> </a>
       <?php endforeach; ?>  
     </div>
@@ -128,16 +88,4 @@ hello
 //   });
 // </script>
 
-<script type="text/javascript">
-//   var $grid = $('.grid').imagesLoaded( function() {
-//   // init Packery after all images have loaded
-//   $grid.packery({
-//     itemSelector: '.grid-item',
-//     gutter: ".grid-sizer" ,
-//     containerStyle: null,
-//     percentPosition: true,
-//     columnWidth: ".grid-sizer"
-//   });
-// }); 
-</script>
 <?php Starkers_Utilities::get_template_parts( array( 'parts/shared/footer','parts/shared/html-footer') ); ?>

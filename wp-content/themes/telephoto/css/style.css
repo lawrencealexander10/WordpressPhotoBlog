@@ -94,7 +94,7 @@ body {
 
 .grid-item img {
   max-width: 100%;
-  margin-bottom: 200px;
+  margin-bottom: 450px;
   height: auto; }
 
 .top-pane {
@@ -286,10 +286,8 @@ body {
   padding-bottom: 0px !important; }
 
 .ena-image {
-  width: 116%;
-  top: -300px;
-  left: -10%;
-  position: fixed; }
+  width: 50%;
+  display: inline-block; }
 
 @media (max-width: 1250px) {
   .ena-image {
