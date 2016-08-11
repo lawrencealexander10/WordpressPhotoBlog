@@ -33,15 +33,17 @@ foreach ( $query_images->posts as $image ) {
 
 <!-- HTML -->
 <section class="top-pane">
-
-
-<img class="ena-image" style="margin-top: 50px" src="" alt="">
-hello<br> 
-  <div class="icons">
-    <a href="<?php echo the_author_meta( 'insta', 1); ?>" class="fa fa-instagram "></a> 
-    <a href="<?php echo the_author_meta( 'linkedin', 1); ?>" class="fa fa-linkedin "></a> 
-    <a href="mailto:<?php echo the_author_meta( 'user_email', 1); ?>" class="fa fa-envelope-square "></a>
-  </div> 
+  <div class="left-side" style="display: inline-block; width: 50%; margin-top: 100px">
+    <img src="http://localhost/wordpress-heroku/wp-content/uploads/2016/07/alexColor.jpg" alt="" style="width: 45% ;margin: 7%; float: right">
+  </div>
+  <div class="right-side" style=" display: inline; width: 50%; margin-top: 25%; text-align: center; position: absolute">
+    <div class="element"></div>
+    <div class="icons">
+      <a href="<?php echo the_author_meta( 'insta', 1); ?>" class="fa fa-instagram "></a> 
+      <a href="<?php echo the_author_meta( 'linkedin', 1); ?>" class="fa fa-linkedin "></a> 
+      <a href="mailto:<?php echo the_author_meta( 'user_email', 1); ?>" class="fa fa-envelope-square "></a>
+    </div> 
+  </div>
 </section>
 
 
@@ -80,13 +82,13 @@ hello<br>
 });
 </script>
 
-// <script>
-//   $(function(){
-//       $(".element").typed({
-//         strings: ["Photographer.", "Filmmaker.", "Everlena."],
-//         typeSpeed: 100
-//       });
-//   });
-// </script>
+  <script>
+  $(function(){
+      $(".element").typed({
+        strings: ["Photographer.", "Filmmaker.", "Everlena."],
+        typeSpeed: 100
+      });
+  });
+  </script>
 
 <?php Starkers_Utilities::get_template_parts( array( 'parts/shared/footer','parts/shared/html-footer') ); ?>

@@ -107,7 +107,7 @@ body {
     display: inline !important;
     font-family: 'Space Mono', monospace;
     font-size: 1.5em;
-    color: white;
+    color: black;
     z-index: 10; }
   .top-pane .icons a {
     text-decoration: none;
@@ -149,7 +149,7 @@ header {
     float: left; }
 
 .typed-cursor {
-  color: white;
+  color: black;
   opacity: 1;
   -webkit-animation: blink 0.7s infinite;
   -moz-animation: blink 0.7s infinite;
@@ -158,33 +158,33 @@ header {
 @keyframes blink {
   0% {
     opacity: 1;
-    color: white; }
+    color: black; }
   50% {
     opacity: 0;
-    color: white; }
+    color: black; }
   100% {
     opacity: 1;
-    color: white; } }
+    color: black; } }
 @-webkit-keyframes blink {
   0% {
     opacity: 1;
-    color: white; }
+    color: black; }
   50% {
     opacity: 0;
-    color: white; }
+    color: black; }
   100% {
     opacity: 1;
-    color: white; } }
+    color: black; } }
 @-moz-keyframes blink {
   0% {
     opacity: 1;
-    color: white; }
+    color: black; }
   50% {
     opacity: 0;
-    color: white; }
+    color: black; }
   100% {
     opacity: 1;
-    color: white; } }
+    color: black; } }
 .featherlight-content {
   padding: 0 !important;
   border-bottom: none !important; }

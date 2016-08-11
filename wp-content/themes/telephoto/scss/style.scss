@@ -48,7 +48,7 @@ body { font-family: sans-serif; }
     display: inline !important;
     font-family: 'Space Mono', monospace;
     font-size: 1.5em;
-    color: white;
+    color: black;
     z-index: 10;
   }
   height: 70%;
@@ -105,26 +105,26 @@ header{
 
 //typed.js
 .typed-cursor{
-    color: white;
+    color: black;
     opacity: 1;
     -webkit-animation: blink 0.7s infinite;
     -moz-animation: blink 0.7s infinite;
     animation: blink 0.7s infinite;
 }
 @keyframes blink{
-    0% { opacity:1; color: white;}
-    50% { opacity:0; color: white;}
-    100% { opacity:1; color: white;}
+    0% { opacity:1; color: black;}
+    50% { opacity:0; color: black;}
+    100% { opacity:1; color: black;}
 }
 @-webkit-keyframes blink{
-    0% { opacity:1; color: white;}
-    50% { opacity:0; color: white;}
-    100% { opacity:1; color: white;}
+    0% { opacity:1; color: black;}
+    50% { opacity:0; color: black;}
+    100% { opacity:1; color: black;}
 }
 @-moz-keyframes blink{
-    0% { opacity:1; color: white;}
-    50% { opacity:0; color: white;}
-    100% { opacity:1; color: white;}
+    0% { opacity:1; color: black;}
+    50% { opacity:0; color: black;}
+    100% { opacity:1; color: black;}
 }
 
 //featherlight

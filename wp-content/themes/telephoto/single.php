@@ -37,11 +37,21 @@
 			}?>
 			<div data-featherlight-gallery data-featherlight-filter="a">
 				<?php foreach ($images as $image):?>
-	        		<a href="<?php echo $image ?>"><img src="<?php echo $image ?>"> </a>
+	        		<a href="<?php echo $image ?>"><img class="lazy" src="<?php echo $image ?>"> </a>
 	      		<?php endforeach; ?>
       		</div>
 		</section>
 <?php endif; ?>
 
- 
+ <script type="text/javascript">
+  $(function() {
+    $('.lazy').Lazy({
+        effect: 'fadeIn',
+        effectTime: 2000,
+        threshold: 0,
+        afterLoad: function(element) {
+            console.log(element.attr("src"));
+    });
+});
+</script>
 <?php Starkers_Utilities::get_template_parts( array( 'parts/shared/footer','parts/shared/html-footer' ) ); ?>
