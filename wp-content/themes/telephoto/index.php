@@ -33,18 +33,15 @@ foreach ( $query_images->posts as $image ) {
 
 <!-- HTML -->
 <section class="top-pane">
-hello<br> 
-hello<br>
-hello<br> 
-hello<br> 
-Filmmaker <br>
 
-<img class="ena-image" src="https://upload.wikimedia.org/wikipedia/commons/6/64/Foods_(cropped).jpg" alt="">
+
+<img class="ena-image" style="margin-top: 50px" src="" alt="">
+hello<br> 
   <div class="icons">
-    <a href="<?php //echo the_author_meta( 'insta', 1); ?>" class="fa fa-instagram "></a> 
-    <a href="<?php //echo the_author_meta( 'linkedin', 1); ?>" class="fa fa-linkedin "></a> 
-    <a href="mailto:<?php //echo the_author_meta( 'user_email', 1); ?>" class="fa fa-envelope-square "></a>
-  </div> -->
+    <a href="<?php echo the_author_meta( 'insta', 1); ?>" class="fa fa-instagram "></a> 
+    <a href="<?php echo the_author_meta( 'linkedin', 1); ?>" class="fa fa-linkedin "></a> 
+    <a href="mailto:<?php echo the_author_meta( 'user_email', 1); ?>" class="fa fa-envelope-square "></a>
+  </div> 
 </section>
 
 
@@ -55,6 +52,7 @@ Filmmaker <br>
       <?php foreach ($images as $image):?>
         <a class="grid-item" href="<?php echo $image ?>"><img class="lazy" data-src="<?php echo $image ?>"> </a>
       <?php endforeach; ?>  
+
     </div>
 </section>
 
@@ -68,6 +66,9 @@ Filmmaker <br>
           columnWidth: ".grid-sizer"
         }); 
     $('.lazy').Lazy({
+        effect: 'fadeIn',
+        effectTime: 2000,
+        threshold: 0,
         afterLoad: function(element) {
             console.log(element.attr("src"));
             $('.grid').packery('layout');

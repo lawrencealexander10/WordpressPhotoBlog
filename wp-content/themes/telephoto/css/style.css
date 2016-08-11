@@ -109,15 +109,11 @@ body {
     font-size: 1.5em;
     color: white;
     z-index: 10; }
-  .top-pane .icons {
-    bottom: 10px;
-    right: 20px;
-    position: absolute; }
-    .top-pane .icons a {
-      text-decoration: none;
-      color: black;
-      padding: 10px;
-      font-size: 50em; }
+  .top-pane .icons a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    font-size: 50em; }
 
 .image-wrap {
   position: absolute;
@@ -131,7 +127,7 @@ body {
 
 .fa {
   font-size: 1.5em !important;
-  color: white !important; }
+  color: black !important; }
 
 header {
   background: white;
