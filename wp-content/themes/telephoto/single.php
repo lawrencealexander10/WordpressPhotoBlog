@@ -10,7 +10,7 @@
  */
 ?>
 
-<?php Starkers_Utilities::get_template_parts( array( 'parts/shared/html-header', 'parts/shared/header') ); ?>
+<?php Starkers_Utilities::get_template_parts( array( 'parts/shared/header') ); ?>
 <?php if ( have_posts() ): the_post(); ?>
 		<section class="content single">
 	    	<h1><?php the_title();?></h1>
