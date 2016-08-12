@@ -82,11 +82,10 @@ body { font-family: sans-serif; }
 
 header{
   background: white;
-  border-bottom: 1px solid #dbdbdb;
   width: 100%;
   position: fixed;
   top: 0; 
-  z-index: 2;
+  z-index: 100;
   padding: 15px 0;
   a{
   font-size: 17px;
@@ -97,6 +96,10 @@ header{
   .right{
     float: right;
     margin-right: 60px;
+    padding-bottom: 5px;
+    border-bottom: solid 3px black;
+    // text-decoration: underline;
+
   }
   .left{
     margin-left: 45px;

@@ -12,7 +12,7 @@
 <?php Starkers_Utilities::get_template_parts( array( 'parts/shared/html-header', 'parts/shared/header') ); ?>
 <?php if ( have_posts() ): ?>
   <section class="content">
-    <h1>Work</h1>
+    <h1>Assorted Work</h1>
     <?php while (have_posts()) : the_post() ?>
       <a href="<?php esc_url( the_permalink() ); ?>">
         <article>

@@ -45,6 +45,7 @@
 
  <script type="text/javascript">
   $(function() {
+  	console.log('hey')
     $('.lazy').Lazy({
         effect: 'fadeIn',
         effectTime: 2000,
