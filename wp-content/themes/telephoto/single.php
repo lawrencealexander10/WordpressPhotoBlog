@@ -51,6 +51,7 @@
         threshold: 0,
         afterLoad: function(element) {
             console.log(element.attr("src"));
+        }
     });
 });
 </script>

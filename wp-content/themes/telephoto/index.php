@@ -34,7 +34,7 @@ foreach ( $query_images->posts as $image ) {
 <!-- HTML -->
 <section class="top-pane">
   <div class="left-side" style="display: inline-block; width: 50%; margin-top: 100px">
-    <img src="http://localhost/wordpress-heroku/wp-content/uploads/2016/07/alexColor.jpg" alt="" style="width: 45% ;margin: 7%; float: right">
+    <img src="https://s3.amazonaws.com/telephoto/wp-content/uploads/2016/07/etport.jpg" alt="" style="width: 45% ;margin: 7%; float: right">
   </div>
   <div class="right-side" style=" display: inline; width: 50%; margin-top: 25%; text-align: center; position: absolute">
     <div class="element"></div>
