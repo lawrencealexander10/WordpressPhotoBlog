@@ -32,17 +32,19 @@ foreach ( $query_images->posts as $image ) {
 } ?>
 
 <!-- HTML -->
-<section class="top-pane">
-  <div class="left-side" style="display: inline-block; width: 50%; margin-top: 100px">
-    <img src="https://s3.amazonaws.com/telephoto/wp-content/uploads/2016/07/etport2.jpg" alt="" style="   ;margin: 7%; float: right">
-  </div>
-  <div class="right-side" style=" display: inline; width: 50%; margin-top: 25%; text-align: center; position: absolute">
-    <div class="element"></div>
-    <div class="icons">
-      <a href="<?php echo the_author_meta( 'insta', 1); ?>" class="fa fa-instagram "></a> 
-      <a href="<?php echo the_author_meta( 'linkedin', 1); ?>" class="fa fa-linkedin "></a> 
-      <a href="mailto:<?php echo the_author_meta( 'user_email', 1); ?>" class="fa fa-envelope-square "></a>
-    </div> 
+<section class=" container-fluid top-pane">
+  <div class="row">
+    <div class="left-side .col-lg-6 .col-sm-12" style="">
+      <img src="https://s3.amazonaws.com/telephoto/wp-content/uploads/2016/07/etport4.jpg" alt="" style="  ;margin: 7%; float: right">
+    </div>
+    <div class="right-side .col-lg-6 .col-sm-12" style=" display: inline; width: 50%; margin-top: 25%; text-align: center; position: absolute">
+      <div class="element"></div>
+      <div class="icons">
+        <a href="<?php echo the_author_meta( 'insta', 1); ?>" class="fa fa-instagram "></a> 
+        <a href="<?php echo the_author_meta( 'linkedin', 1); ?>" class="fa fa-linkedin "></a> 
+        <a href="mailto:<?php echo the_author_meta( 'user_email', 1); ?>" class="fa fa-envelope-square "></a>
+      </div> 
+    </div>
   </div>
 </section>
 
