@@ -32,20 +32,19 @@ foreach ( $query_images->posts as $image ) {
 } ?>
 
 <!-- HTML -->
-<section class=" container-fluid top-pane">
-  <div class="row">
-    <div class="left-side .col-lg-6 .col-sm-12" style="">
-      <img src="https://s3.amazonaws.com/telephoto/wp-content/uploads/2016/07/etport4.jpg" alt="" style="  ;margin: 7%; float: right">
-    </div>
-    <div class="right-side .col-lg-6 .col-sm-12" style=" display: inline; width: 50%; margin-top: 25%; text-align: center; position: absolute">
+<section class="top-pane vertical-align" style="margin-top: 40px;" >
+    <div class="letters" style=" text-align: center; ">
       <div class="element"></div>
-      <div class="icons">
+      <br>
+      <div class="icons" style="">
         <a href="<?php echo the_author_meta( 'insta', 1); ?>" class="fa fa-instagram "></a> 
         <a href="<?php echo the_author_meta( 'linkedin', 1); ?>" class="fa fa-linkedin "></a> 
         <a href="mailto:<?php echo the_author_meta( 'user_email', 1); ?>" class="fa fa-envelope-square "></a>
       </div> 
     </div>
-  </div>
+    <div class="image-wrap" style="">
+      <img class="img-responsive center-block"src="https://s3.amazonaws.com/telephoto/wp-content/uploads/2016/07/etport4.jpg" alt="" style="margin: auto ">
+    </div>
 </section>
 
 

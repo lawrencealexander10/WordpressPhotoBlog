@@ -53,9 +53,7 @@ body { font-family: sans-serif; }
   }
   height: 70%;
   .icons{  
-    // bottom: 10px;
-    // right: 20px;
-    // position: absolute;
+    z-index: 10;
     a{
       text-decoration: none;
       color: black;
@@ -64,12 +62,6 @@ body { font-family: sans-serif; }
     }
   }
 }
-.image-wrap{
-  position:absolute; 
-  top:0; 
-  left:0;
-  overflow: hidden;
-}
 .gradient{
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), transparent; 
   height: 100%;
@@ -77,16 +69,18 @@ body { font-family: sans-serif; }
 
 .fa{
   font-size: 1.5em !important;
-  color: black !important;
+  color: black ;
 }
 
 header{
+  opacity: .8;
   background: white;
   width: 100%;
   position: fixed;
   top: 0; 
   z-index: 100;
   padding: 15px 0;
+  text-decoration: none;
   a{
   font-size: 17px;
   font-family: "Raleway", "Open Sans", "Helvetica-Neue", "Arial", "Helvetica", sans-serif;
@@ -98,11 +92,11 @@ header{
     margin-right: 60px;
     padding-bottom: 5px;
     border-bottom: solid 3px black;
-    // text-decoration: underline;
-
+    text-decoration: none;
   }
   .left{
     margin-left: 45px;
+    text-decoration: none;
     float: left;
   }
 }
@@ -178,21 +172,6 @@ body{
   padding-bottom: 0px !important;
 }
 
-.ena-image{
-  width: 50%; 
-  display: inline-block;
-  // top: -300px; 
-  // left: -10%; 
-  // position:fixed
-}
-@media (max-width: 1250px){
-  .ena-image{
-    height: 150%;
-    width: auto !important;
-    top: -400px; 
-    left: -500px;
-  }
-}
 .bottom-pane{
   padding: 20px;
   background: white
@@ -206,5 +185,66 @@ body{
 .left-side{
   @media (max-width: 800px) {
     display: block;    
+  }
+}
+
+.vertical-align {
+  min-height: 70%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 70vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
+.vertical-align > [class^="col-"] {
+  // display: flex;
+  // align-items: center;
+  // justify-content: center; /* Optional, to align inner items 
+                              /*horizontally inside the column */
+}
+
+.letters{
+  width: 60%;
+}
+@media (max-width: 900px) {
+  .image-wrap{
+    margin: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), transparent;
+    img{
+      z-index: -1;
+    }
+  }
+
+  .letters{
+    width: 100%;
+    position: absolute;
+    bottom: 100px;
+    .element{
+      color: white;
+    }
+    .typed-cursor{
+      color: white;
+      z-index: 10;
+    }
+    @keyframes blink{
+    0% { opacity:1; color: white;}
+    50% { opacity:0; color: white;}
+    100% { opacity:1; color: white;}
+    }
+    @-webkit-keyframes blink{
+        0% { opacity:1; color: white;}
+        50% { opacity:0; color: white;}
+        100% { opacity:1; color: white;}
+    }
+    @-moz-keyframes blink{
+        0% { opacity:1; color: white;}
+        50% { opacity:0; color: white;}
+        100% { opacity:1; color: white;}
+    }
+    .icons{
+      a{
+      color: white;
+      }
+    }
   }
 }
